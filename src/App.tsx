@@ -2,6 +2,8 @@
 // import ProductCard from "./components/ProductCard";
 // import Todolist from "./components/Todolist"
 
+import FormsL from "./components/FormsL"
+
 
 
 export const App = () => {
@@ -19,6 +21,7 @@ export const App = () => {
     {/* <Todolist todoarr={todos}/> */}
     {/* <ProductCard products={products}/> */}
     {/* <ColorPicker/> */}
+    <FormsL/>
     </>
   )
 }
