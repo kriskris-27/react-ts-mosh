@@ -2,7 +2,10 @@
 // import ProductCard from "./components/ProductCard";
 // import Todolist from "./components/Todolist"
 
-import FormsL from "./components/FormsL"
+import SetList from "./components/SetList"
+
+// import FormsL from "./components/FormsL"
+// import Lvl_2 from "./components/lvl_2"
 
 
 
@@ -21,7 +24,9 @@ export const App = () => {
     {/* <Todolist todoarr={todos}/> */}
     {/* <ProductCard products={products}/> */}
     {/* <ColorPicker/> */}
-    <FormsL/>
+    {/* <FormsL/> */}
+    {/* <Lvl_2/> */}
+    <SetList/>
     </>
   )
 }
