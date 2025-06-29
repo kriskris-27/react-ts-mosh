@@ -2,7 +2,10 @@
 // import ProductCard from "./components/ProductCard";
 // import Todolist from "./components/Todolist"
 
-import Parent from "./components/Parent"
+import  BoolTog  from "./components/BoolTog"
+import Form from "./components/Form"
+
+// import Parent from "./components/Parent"
 
 // import SetList from "./components/SetList"
 
@@ -29,7 +32,9 @@ export const App = () => {
     {/* <FormsL/> */}
     {/* <Lvl_2/> */}
     {/* <SetList/> */}
-    <Parent/>
+    {/* <Parent/> */}
+    <BoolTog/>
+    <Form/>
     </>
   )
 }
