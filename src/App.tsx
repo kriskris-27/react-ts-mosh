@@ -4,6 +4,7 @@
 
 // import  BoolTog  from "./components/BoolTog"
 import Form from "./components/Form"
+import Formrev1 from "./components/Formrev1"
 
 // import Parent from "./components/Parent"
 
@@ -35,6 +36,7 @@ export const App = () => {
     {/* <Parent/> */}
     {/* <BoolTog/> */}
     <Form/>
+    <Formrev1/>
     </>
   )
 }
