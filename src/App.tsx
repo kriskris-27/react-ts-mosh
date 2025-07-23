@@ -2,10 +2,13 @@
 // import ProductCard from "./components/ProductCard";
 // import Todolist from "./components/Todolist"
 
+import { useState } from "react"
+import Toggle from "./components/Toggle"
+
 // import  BoolTog  from "./components/BoolTog"
-import Form from "./components/Form"
-import Formrev1 from "./components/Formrev1"
-import Formrev2 from "./components/Formrev2"
+// import Form from "./components/Form"
+// import Formrev1 from "./components/Formrev1"
+// import Formrev2 from "./components/Formrev2"
 
 // import Parent from "./components/Parent"
 
@@ -24,7 +27,10 @@ export const App = () => {
 //   { id: '3', name: 'MacBook', price: 1999 },
 // ];
 
-
+const [toggle , setToggle] = useState<boolean>(true) 
+const switchtoggle =() =>{
+    setToggle(!toggle)
+}
 
   return (
     <>
@@ -36,9 +42,10 @@ export const App = () => {
     {/* <SetList/> */}
     {/* <Parent/> */}
     {/* <BoolTog/> */}
-    <Form/>
+    {/* <Form/>
     <Formrev1/>
-    <Formrev2/>
+    <Formrev2/> */}
+    <Toggle  toginfo = {toggle} handleToggle= {switchtoggle}/>
     </>
   )
 }
