@@ -1,17 +1,23 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface Task{
 id:number,
 text:string
 }
+
 const Formrev2 = () => {
-    const [items,setItems] = useState<Task[]>([{ id: 1, text: "Learn React" },
-  { id: 2, text: "Practice TypeScript" },
-  { id: 3, text: "Build a project" }])
+    const [items,setItems] = useState<Task[]>([])
   const [add,setAdd] = useState<string>("");
+  
   const [mkid,setMkid] =useState<number | null> (null);
   const [mval,setMval] = useState<string>("");
 
+const inpref = useRef<HTMLInputElement>(null);
+useEffect(()=>{
+    if(mkid !== null && inpref.current){
+        inpref.current.focus()
+    }
+},[mkid])
 
   const handleAdd=(e:React.FormEvent)=>{
     e.preventDefault()
@@ -56,7 +62,7 @@ const Formrev2 = () => {
             <li key={item.id}>
             {mkid === item.id ? (
                 <>
-                <input type="text" value={mval} onChange={(e)=>setMval(e.target.value)}/>
+                <input type="text" ref={inpref} value={mval} onChange={(e)=>setMval(e.target.value)}/>
                 <button onClick={()=>{handleSave(item.id)}}>Save</button>
                 <button onClick={handleCancel}>Cancel</button>
                 </>

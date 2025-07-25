@@ -9,6 +9,7 @@ import Toggle from "./components/Toggle"
 // import Form from "./components/Form"
 // import Formrev1 from "./components/Formrev1"
 // import Formrev2 from "./components/Formrev2"
+import Refex1 from "./components/Refex1"
 
 // import Parent from "./components/Parent"
 
@@ -42,10 +43,11 @@ const switchtoggle =() =>{
     {/* <SetList/> */}
     {/* <Parent/> */}
     {/* <BoolTog/> */}
-    {/* <Form/>
-    <Formrev1/>
+    {/* <Form/>*/}
+    {/* <Formrev1/> 
     <Formrev2/> */}
     <Toggle  toginfo = {toggle} handleToggle= {switchtoggle}/>
+    <Refex1/>
     </>
   )
 }
