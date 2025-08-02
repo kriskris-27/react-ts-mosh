@@ -2,6 +2,7 @@ import AsyncE3 from "./useEffect/AsyncE3"
 import DbncuseE4 from "./useEffect/DbncuseE4"
 import UseE1 from "./useEffect/useE1"
 import WinuseEff from "./useEffect/WinuseEff"
+import Userefex1 from "./useRef/Userefex1"
 
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
     <WinuseEff/>
     <AsyncE3/>
     <DbncuseE4/>
+    <Userefex1/>
     </>
   )
 }
