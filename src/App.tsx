@@ -6,7 +6,8 @@
 // import SimExMemo from "./useMemo/SimExMemo"
 // import Userefex1 from "./useRef/Userefex1"
 
-import Usememoex from "./useMemo/Usememoex"
+import UseCallbackExample from "./usecallback/Ex1callback"
+// import Usememoex from "./useMemo/Usememoex"
 
 
 export const App = () => {
@@ -21,7 +22,8 @@ export const App = () => {
     <Userefex1/>
     <Exmemo/>
     <SimExMemo/> */}
-    <Usememoex/>
+    {/* <Usememoex/> */}
+    <UseCallbackExample/>
     </>
   )
 }
