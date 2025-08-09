@@ -7,6 +7,7 @@
 // import Userefex1 from "./useRef/Userefex1"
 
 import UseCallbackExample from "./usecallback/Ex1callback"
+import Ex2callback from "./usecallback/Ex2callback"
 // import Usememoex from "./useMemo/Usememoex"
 
 
@@ -24,6 +25,7 @@ export const App = () => {
     <SimExMemo/> */}
     {/* <Usememoex/> */}
     <UseCallbackExample/>
+    <Ex2callback/>
     </>
   )
 }
