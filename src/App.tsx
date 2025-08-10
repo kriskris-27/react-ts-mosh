@@ -8,6 +8,7 @@
 
 import UseCallbackExample from "./usecallback/Ex1callback"
 import Ex2callback from "./usecallback/Ex2callback"
+import SearchUsers from "./usecallback/Ex3callback"
 // import Usememoex from "./useMemo/Usememoex"
 
 
@@ -26,6 +27,7 @@ export const App = () => {
     {/* <Usememoex/> */}
     <UseCallbackExample/>
     <Ex2callback/>
+    <SearchUsers/>
     </>
   )
 }
