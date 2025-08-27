@@ -24,29 +24,7 @@ export default function Shop() {
   ];
 
   return (
-    <div>
-      <h2>🛒 Cart ({cart.length} items)</h2>
-      <button onClick={() => dispatch({ type: "CLEAR_CART" })}>Clear Cart</button>
-
-      <h3>Products</h3>
-      {products.map((p) => (
-        <div key={p.id} style={{ margin: "10px" }}>
-          {p.name} - ${p.price}
-          <button onClick={() => dispatch({ type: "ADD_ITEM", product: p })}>
-            Add
-          </button>
-          <button onClick={() => dispatch({ type: "REMOVE_ITEM", id: p.id })}>
-            Remove
-          </button>
-        </div>
-      ))}
-
-      <h3>Cart Items:</h3>
-      <ul>
-        {cart.map((item) => (
-          <li key={item.id}>{item.name} (${item.price})</li>
-        ))}
-      </ul>
+    
     </div>
   );
 }
